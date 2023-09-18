@@ -1,0 +1,6 @@
+dev_env
+.vscode
+.ipynb_checkpoints
+__pycache__
+docs/_build
+*.ipynb
