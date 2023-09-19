@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="153.8475mm"
+   height="73.696732mm"
+   viewBox="0 0 153.8475 73.696732"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="appendix_RP.pdf"
+   inkscape:export-filename="logo2.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -41,47 +41,16 @@
     <rect
        x="167.48911"
        y="130.06137"
-       width="450.0685"
-       height="73.919774"
+       width="450.06851"
+       height="73.919777"
        id="rect1586" />
-    <rect
-       x="170.99808"
-       y="86.188551"
-       width="55.160678"
-       height="30.338369"
-       id="rect1336" />
-    <rect
-       x="156.51841"
-       y="177.20366"
-       width="43.43903"
-       height="24.132794"
-       id="rect722" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipEmfPath1">
       <path
-         d="M 0.67779528,0 L 472.42331,0 L 472.42331,155.89291 L 0.67779528,155.89291 z"
+         d="M 0.67779528,0 H 472.42331 V 155.89291 H 0.67779528 Z"
          id="path132" />
     </clipPath>
-    <pattern
-       id="EMFhbasepattern"
-       patternUnits="userSpaceOnUse"
-       width="6"
-       height="6"
-       x="0"
-       y="0" />
-    <rect
-       x="170.99808"
-       y="86.188553"
-       width="55.160679"
-       height="30.338369"
-       id="rect1336-7" />
-    <rect
-       x="170.99808"
-       y="86.188553"
-       width="55.160679"
-       height="30.338369"
-       id="rect1336-3" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipEmfPath1-2">
@@ -170,22 +139,8 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:400;font-size:3.20944px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.364191"
-       x="40.481415"
-       y="80.574493"
-       id="text178"><tspan
-         sodipodi:role="line"
-         x="40.481415"
-         y="80.574493"
-         id="tspan176"
-         style="stroke-width:0.364191"><tspan
-           dx="0"
-           dy="0"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:3.20944px;font-family:Arial;fill:#262626;stroke-width:0.364191"
-           id="tspan174">଴</tspan></tspan></text>
+     id="layer1"
+     transform="translate(-34.774976,-51.329962)">
     <g
        id="g476">
       <g
@@ -468,7 +423,7 @@
          xml:space="preserve"
          transform="scale(0.26458333)"
          id="text1584"
-         style="fill:#000000;stroke:#000000;stroke-width:4.53543307;-inkscape-font-specification:'Arial Bold';font-family:Arial;stroke-miterlimit:3.8;font-size:16px;stroke-dasharray:18.1417094, 9.07086614;font-weight:bold;text-align:center;stroke-opacity:0;white-space:pre;shape-inside:url(#rect1586)" />
+         style="font-weight:bold;font-size:16px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;white-space:pre;shape-inside:url(#rect1586);fill:#000000;stroke:#000000;stroke-width:4.53543;stroke-miterlimit:3.8;stroke-dasharray:18.1417, 9.07087;stroke-opacity:0" />
       <text
          xml:space="preserve"
          style="font-weight:bold;font-size:13.5387px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.83773;stroke-miterlimit:3.8;stroke-dasharray:15.3509, 7.67547;stroke-opacity:0"
