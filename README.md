@@ -5,6 +5,7 @@
 -----------------
 
 # RePeriods : a tool to find Representatives Periods
+## Beta-Version
 
 ## What is it?
 
