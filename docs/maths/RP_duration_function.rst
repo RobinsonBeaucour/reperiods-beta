@@ -10,5 +10,5 @@ The duration function of :math:`RP` is defined as :
 .. math::
     C(f) : = \left\{\begin{array}{ccc}
             \mathbb{R}_+  & \longrightarrow &  [0,T]  \\ 
-            x & \mapsto & \sum_{i=1}^n \omega_i * C(f_{|d_i})(x)
+            x & \mapsto & \sum_{i=1}^n \omega_i \cdot C(f_{|d_i})(x)
             \end{array}\right.
