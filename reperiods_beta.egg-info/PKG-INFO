@@ -1,13 +1,13 @@
 Metadata-Version: 2.1
 Name: reperiods-beta
-Version: 0.0.1
+Version: 1.0.1
 Summary: A set of tools to find Representative Periods.
 Home-page: UNKNOWN
 License: UNKNOWN
 Platform: UNKNOWN
 Classifier: Intended Audience :: Science/Research
 Classifier: Topic :: Scientific/Engineering
-Requires-Python: >=3.6
+Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 Provides-Extra: tests
 Provides-Extra: docs
@@ -19,6 +19,7 @@ Provides-Extra: docs
 -----------------
 
 # RePeriods : a tool to find Representatives Periods
+## Beta-Version
 
 ## What is it?
 

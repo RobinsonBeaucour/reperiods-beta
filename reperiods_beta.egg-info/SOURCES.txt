@@ -9,8 +9,6 @@ reperiods/plot.py
 reperiods/representative_periods.py
 reperiods/temporal_data.py
 reperiods/utils.py
-reperiods/tests/__init__.py
-reperiods/tests/test_common.py
 reperiods_beta.egg-info/PKG-INFO
 reperiods_beta.egg-info/SOURCES.txt
 reperiods_beta.egg-info/dependency_links.txt

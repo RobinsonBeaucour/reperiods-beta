@@ -11,7 +11,7 @@ def load_renewable(length=336):
     """
     # Load data from a CSV file located in the "./periods/datasets" directory.
     data = pd.read_csv(
-        "./reperiods/datasets/example_dataset.csv",
+        "https://raw.githubusercontent.com/RobinsonBeaucour/reperiods-beta/beta/reperiods/datasets/example_dataset.csv",
         sep=";",
         header=3,
         usecols=[1, 2]

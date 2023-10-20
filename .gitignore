@@ -1,4 +1,10 @@
 dev_env
+env2
+env3
+env4
+env5
+env6
+run.ipynb
 .vscode
 .ipynb_checkpoints
 __pycache__
@@ -7,3 +13,4 @@ docs/_build
 user
 build
 env_dev
+run.py

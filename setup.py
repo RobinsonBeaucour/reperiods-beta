@@ -14,13 +14,13 @@ URL = ""
 LICENSE = ""
 DOWNLOAD_URL = ""
 VERSION = __version__  # noqa
-INSTALL_REQUIRES = ["pandas>=2.0.3", "PuLP>=2.7.0", "plotly>=5.15.0","scikit-learn-extra>=0.3.0","numpy>=1.25.2"]
+INSTALL_REQUIRES = ["pandas>=2.0.3", "PuLP>=2.7.0", "plotly>=5.15.0","scikit-learn-extra>=0.3.0","numpy>=1.25.2","nbformat>=4.2.0"]
 CLASSIFIERS = [
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering",
 ]
 EXTRAS_REQUIRE = {
-    "tests": ["pytest", "pytest-cov"],
+    "tests": ["pytest", "pytest-cov","twine","wheel"],
     "docs": [
         "pillow",
         "sphinx",
