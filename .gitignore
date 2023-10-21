@@ -8,7 +8,7 @@ run.ipynb
 .vscode
 .ipynb_checkpoints
 __pycache__
-docs/_build
+
 *.ipynb
 user
 build
