@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="docs/images/logo.svg"><br>
+  <img src="https://raw.githubusercontent.com/RobinsonBeaucour/reperiods-beta/beta/docs/images/logo.svg"><br>
 </div>
+
 
 -----------------
 
@@ -39,9 +40,22 @@ In summary, RPs are a valuable tool in various aspects of energy system analysis
 - [Documentation](#documentation)
 
 ## Install
+Can be installed with Pypi :
+
+`pip install reperiods-beta`
 
 ## Dependencies
+
+reperiods requires,
+
+* Python >= 3.10
+* pandas>=2.0.3, for time series management
+* plotly>=5.15.0, for embedded visualisation
+* PuLP>=2.7.0, for optimization process
+* scikit-learn-extra>=0.3.0, for k-medoids process
 
 ## License
 
 ## Documentation
+
+The documentation is hosted on [reperiods-beta.readthedocs.io](https://reperiods-beta.readthedocs.io/en/latest/).

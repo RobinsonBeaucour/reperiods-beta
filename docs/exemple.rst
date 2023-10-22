@@ -26,14 +26,14 @@ Finding Representative Periods (RP)
 .. code-block:: python
 
     N_RP = 2
-    RP_lenght=48
+    RP_length=48
 
 .. centered:: Poncelet
 
 .. code-block:: python
 
     # Using Poncelet method to find RP and their weights
-    temporal_data.calculate_RP(method = "poncelet", N_RP=N_RP, RP_lenght=RP_lenght, N_bins=15)
+    temporal_data.calculate_RP(method = "poncelet", N_RP=N_RP, RP_length=RP_length, N_bins=15)
     # Show RP selected (highlighted in green) and their weights
     temporal_data.plot_RP()
 
@@ -44,7 +44,7 @@ Finding Representative Periods (RP)
 .. code-block:: python
 
     # Using K-medoids method
-    temporal_data.calculate_RP(method = "kmedoids", N_RP=N_RP, RP_lenght=RP_lenght)
+    temporal_data.calculate_RP(method = "kmedoids", N_RP=N_RP, RP_length=RP_length)
     # Show RP selected (highlighted in green) and their weights
     temporal_data.plot_RP()
 
@@ -57,7 +57,7 @@ For comparison purpose, the random method randomly select RP and their weights.
 .. code-block:: python
 
     # Using random method to find RP and their weights three times
-    temporal_data.calculate_RP(method = "random", N_RP=N_RP, RP_lenght=RP_lenght)
+    temporal_data.calculate_RP(method = "random", N_RP=N_RP, RP_length=RP_length)
     temporal_data.plot_RP()
 
 .. figure:: images/exemples/RP/random1.png
@@ -73,15 +73,15 @@ To evaluate RP and their weights it is possible to compare the duration curve ap
 
 .. code-block:: python
 
-    temporal_data.calculate_RP(method = "poncelet", N_RP=N_RP, RP_lenght=RP_lenght, N_bins=15)
+    temporal_data.calculate_RP(method = "poncelet", N_RP=N_RP, RP_length=RP_length, N_bins=15)
     temporal_data.plot_DC()
-    temporal_data.calculate_RP(method = "kmedoids", N_RP=N_RP, RP_lenght=RP_lenght)
+    temporal_data.calculate_RP(method = "kmedoids", N_RP=N_RP, RP_length=RP_length)
     temporal_data.plot_DC()
-    temporal_data.calculate_RP(method = "random", N_RP=N_RP, RP_lenght=RP_lenght)
+    temporal_data.calculate_RP(method = "random", N_RP=N_RP, RP_length=RP_length)
     temporal_data.plot_DC()
-    temporal_data.calculate_RP(method = "random", N_RP=N_RP, RP_lenght=RP_lenght)
+    temporal_data.calculate_RP(method = "random", N_RP=N_RP, RP_length=RP_length)
     temporal_data.plot_DC()
-    temporal_data.calculate_RP(method = "random", N_RP=N_RP, RP_lenght=RP_lenght)
+    temporal_data.calculate_RP(method = "random", N_RP=N_RP, RP_length=RP_length)
     temporal_data.plot_DC()
 
 .. centered:: Poncelet
