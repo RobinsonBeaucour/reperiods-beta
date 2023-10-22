@@ -9,7 +9,7 @@ Example
 .. code-block:: python
 
     import reperiods as rp
-    from periods.datasets import load_renewable
+    from reperiods.datasets import load_renewable
 
     # Loading a dataset of hourly capacity factor in a TemporalData object
     data = load_renewable(24*7*2)
