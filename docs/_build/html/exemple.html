@@ -111,12 +111,12 @@
 <div class="line">Setting number of RP to select on the data and length in hours.</div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">N_RP</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">RP_lenght</span><span class="o">=</span><span class="mi">48</span>
+<span class="n">RP_length</span><span class="o">=</span><span class="mi">48</span>
 </pre></div>
 </div>
 <p class="centered">
 <strong>Poncelet</strong></p><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using Poncelet method to find RP and their weights</span>
-<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;poncelet&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_lenght</span><span class="o">=</span><span class="n">RP_lenght</span><span class="p">,</span> <span class="n">N_bins</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;poncelet&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_length</span><span class="o">=</span><span class="n">RP_length</span><span class="p">,</span> <span class="n">N_bins</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 <span class="c1"># Show RP selected (highlighted in green) and their weights</span>
 <span class="n">temporal_data</span><span class="o">.</span><span class="n">plot_RP</span><span class="p">()</span>
 </pre></div>
@@ -126,7 +126,7 @@
 </figure>
 <p class="centered">
 <strong>K-medoids</strong></p><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using K-medoids method</span>
-<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;kmedoids&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_lenght</span><span class="o">=</span><span class="n">RP_lenght</span><span class="p">)</span>
+<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;kmedoids&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_length</span><span class="o">=</span><span class="n">RP_length</span><span class="p">)</span>
 <span class="c1"># Show RP selected (highlighted in green) and their weights</span>
 <span class="n">temporal_data</span><span class="o">.</span><span class="n">plot_RP</span><span class="p">()</span>
 </pre></div>
@@ -137,7 +137,7 @@
 <p class="centered">
 <strong>Random</strong></p><p>For comparison purpose, the random method randomly select RP and their weights.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using random method to find RP and their weights three times</span>
-<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_lenght</span><span class="o">=</span><span class="n">RP_lenght</span><span class="p">)</span>
+<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_length</span><span class="o">=</span><span class="n">RP_length</span><span class="p">)</span>
 <span class="n">temporal_data</span><span class="o">.</span><span class="n">plot_RP</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -154,15 +154,15 @@
 <section id="duration-curves">
 <h2>Duration Curves<a class="headerlink" href="#duration-curves" title="Link to this heading"></a></h2>
 <p>To evaluate RP and their weights it is possible to compare the duration curve approximation from RP and original data’s duration curve using <code class="docutils literal notranslate"><span class="pre">plot_DC()</span></code>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;poncelet&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_lenght</span><span class="o">=</span><span class="n">RP_lenght</span><span class="p">,</span> <span class="n">N_bins</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;poncelet&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_length</span><span class="o">=</span><span class="n">RP_length</span><span class="p">,</span> <span class="n">N_bins</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 <span class="n">temporal_data</span><span class="o">.</span><span class="n">plot_DC</span><span class="p">()</span>
-<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;kmedoids&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_lenght</span><span class="o">=</span><span class="n">RP_lenght</span><span class="p">)</span>
+<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;kmedoids&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_length</span><span class="o">=</span><span class="n">RP_length</span><span class="p">)</span>
 <span class="n">temporal_data</span><span class="o">.</span><span class="n">plot_DC</span><span class="p">()</span>
-<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_lenght</span><span class="o">=</span><span class="n">RP_lenght</span><span class="p">)</span>
+<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_length</span><span class="o">=</span><span class="n">RP_length</span><span class="p">)</span>
 <span class="n">temporal_data</span><span class="o">.</span><span class="n">plot_DC</span><span class="p">()</span>
-<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_lenght</span><span class="o">=</span><span class="n">RP_lenght</span><span class="p">)</span>
+<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_length</span><span class="o">=</span><span class="n">RP_length</span><span class="p">)</span>
 <span class="n">temporal_data</span><span class="o">.</span><span class="n">plot_DC</span><span class="p">()</span>
-<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_lenght</span><span class="o">=</span><span class="n">RP_lenght</span><span class="p">)</span>
+<span class="n">temporal_data</span><span class="o">.</span><span class="n">calculate_RP</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span><span class="p">,</span> <span class="n">N_RP</span><span class="o">=</span><span class="n">N_RP</span><span class="p">,</span> <span class="n">RP_length</span><span class="o">=</span><span class="n">RP_length</span><span class="p">)</span>
 <span class="n">temporal_data</span><span class="o">.</span><span class="n">plot_DC</span><span class="p">()</span>
 </pre></div>
 </div>
