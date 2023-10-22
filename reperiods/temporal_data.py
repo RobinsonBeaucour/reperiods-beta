@@ -1,12 +1,13 @@
+from abc import ABC, abstractmethod
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
+
 from .utils import check_is_RP
 from .find_RP import poncelet_method, random_method, kmedoids_method
 from .plot import show_curves, show_DC, show_RP
 from .export import save_RP
-
-import pandas as pd
 
 import pandas as pd
 
@@ -33,6 +34,7 @@ class TemporalData:
         self.data = data
         self.RP = None
 
+    @property
     def curve_set(self):
         """Get the set of curves (column names) in the data.
 
@@ -41,6 +43,7 @@ class TemporalData:
         """
         return self.data.columns
     
+    @property
     def time_horizon(self):
         """Get the time horizon (index) of the data.
 
@@ -49,6 +52,7 @@ class TemporalData:
         """
         return self.data.index
     
+    @abstractmethod
     def calculate_RP(self, method, N_RP, RP_length, N_bins=15, solver=None):
         """Calculate representative periods (RPs) using the specified method.
 
@@ -74,6 +78,7 @@ class TemporalData:
         else:
             raise ValueError("Invalid method. Supported methods: 'poncelet', 'kmedoids', 'random'")
 
+    @abstractmethod
     def plot_curves(self):
         """Plot the original curves.
 
@@ -82,6 +87,7 @@ class TemporalData:
         """
         return show_curves(self)
 
+    @abstractmethod
     def plot_RP(self):
         """Plot the representative periods (RPs).
 
@@ -91,6 +97,7 @@ class TemporalData:
         check_is_RP(self)
         return show_RP(self)
 
+    @abstractmethod
     def plot_DC(self):
         """Plot the duration curves (DCs) of the original data and combined RPs.
 
@@ -100,6 +107,7 @@ class TemporalData:
         check_is_RP(self)
         return show_DC(self)
 
+    @abstractmethod
     def export(self, folder_path='./', sep=','):
         """
         Export representative periods (RPs) and their weights to CSV files.

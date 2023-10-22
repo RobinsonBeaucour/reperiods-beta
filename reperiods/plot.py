@@ -16,11 +16,11 @@ def show_curves(temporal_data):
     fig = go.Figure()
 
     # Loop through each curve in the temporal_data object
-    for curve in temporal_data.curve_set():
+    for curve in temporal_data.curve_set:
         # Add a scatter plot trace for the curve
         fig.add_trace(
             go.Scatter(
-                x=temporal_data.time_horizon(),  # X-axis data (time horizon)
+                x=temporal_data.time_horizon,  # X-axis data (time horizon)
                 y=temporal_data.data[curve],    # Y-axis data (curve values)
                 name=curve                       # Name for the curve in the legend
             )
@@ -75,7 +75,7 @@ def show_DC(temporal_data):
     Y = np.linspace(0, 1, 100)
 
     # Loop through each curve in the temporal_data object
-    for i, curve in enumerate(temporal_data.curve_set()):
+    for i, curve in enumerate(temporal_data.curve_set):
         # Add the original duration curve as a solid line
         fig.add_trace(
             go.Scatter(

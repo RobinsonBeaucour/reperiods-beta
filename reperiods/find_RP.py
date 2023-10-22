@@ -29,7 +29,7 @@ def poncelet_method(temporal_data, N_RP, RP_length, N_bins=15, solver=None):
 
     # Set scalers
     scalers = {}
-    for curve in temporal_data.curve_set():
+    for curve in temporal_data.curve_set:
         scaler = MinMaxScaler()
         scaler.fit(temporal_data.data[curve].to_numpy().reshape(-1, 1))
         scalers[curve] = scaler
@@ -37,13 +37,13 @@ def poncelet_method(temporal_data, N_RP, RP_length, N_bins=15, solver=None):
     ## Set MILP model
     # Constants
     L = {}
-    for curve in temporal_data.curve_set():
+    for curve in temporal_data.curve_set:
         DC = duration_function(scalers[curve].transform(temporal_data.data[curve].to_numpy().reshape(-1, 1)))
         for bin in bins:
             L[curve, bin] = DC(bin)
     A = {}
     for P_id in P_candidates:
-        for curve in temporal_data.curve_set():
+        for curve in temporal_data.curve_set:
             DC = duration_function(scalers[curve].transform(P_candidates[P_id][curve].to_numpy().reshape(-1, 1)))
             for bin in bins:
                 A[curve, bin, P_id] = DC(bin)
@@ -51,7 +51,7 @@ def poncelet_method(temporal_data, N_RP, RP_length, N_bins=15, solver=None):
     # Variables
     U = {P_id: pl.LpVariable(f"U_{P_id}", cat="Binary") for P_id in P_candidates}
     W = {P_id: pl.LpVariable(f"W_{P_id}", cat="Continuous", lowBound=0) for P_id in P_candidates}
-    errors = {(curve, bin): pl.LpVariable(f"error_{curve}-{bin}", cat="Continuous") for curve in temporal_data.curve_set() for bin in bins}
+    errors = {(curve, bin): pl.LpVariable(f"error_{curve}-{bin}", cat="Continuous") for curve in temporal_data.curve_set for bin in bins}
 
     # Constraints
     problem = pl.LpProblem("Poncelet_Method", pl.LpMinimize)
@@ -70,7 +70,7 @@ def poncelet_method(temporal_data, N_RP, RP_length, N_bins=15, solver=None):
             f"Weight_{P_id}_is_not_null_if_the_Period_{P_id}_is_selected",
         )
 
-    for curve in temporal_data.curve_set():
+    for curve in temporal_data.curve_set:
         for bin in bins:
             problem += (
                 errors[curve, bin] >= L[curve, bin] - pl.lpSum(W[P_id] * A[curve, bin, P_id] for P_id in P_candidates)
@@ -81,7 +81,7 @@ def poncelet_method(temporal_data, N_RP, RP_length, N_bins=15, solver=None):
 
     # Objective
     problem += (
-        pl.lpSum(errors[curve, bin] for curve in temporal_data.curve_set() for bin in bins),
+        pl.lpSum(errors[curve, bin] for curve in temporal_data.curve_set for bin in bins),
         "Minimize global error",
     )
 
