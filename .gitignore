@@ -8,9 +8,10 @@ run.ipynb
 .vscode
 .ipynb_checkpoints
 __pycache__
-
+.gitignore
 *.ipynb
 user
 build
 env_dev
 run.py
+test.py
