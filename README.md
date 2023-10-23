@@ -56,6 +56,7 @@ reperiods requires,
 
 ## License
 
+Package is under MIT license
 ## Documentation
 
 The documentation is hosted on [reperiods-beta.readthedocs.io](https://reperiods-beta.readthedocs.io/en/latest/).
