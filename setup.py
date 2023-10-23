@@ -11,7 +11,7 @@ DESCRIPTION = "A set of tools to find Representative Periods."
 with open("README.md", "r") as f:
     LONG_DESCRIPTION = f.read()
 URL = ""
-LICENSE = ""
+LICENSE = "MIT"
 DOWNLOAD_URL = ""
 VERSION = __version__  # noqa
 INSTALL_REQUIRES = ["pandas>=2.0.3", "PuLP>=2.7.0", "plotly>=5.15.0","scikit-learn-extra>=0.3.0","numpy>=1.25.2","nbformat>=4.2.0"]
